@@ -1,2 +1,2 @@
 # fox-bot
-Java JSoup Robot to scrap FoxBit Bitcoin Price and send via e-mail
+Java Robot to scrap FoxBit Bitcoin Price with JSoup and PhantomJs WebDriver and send via e-mail
