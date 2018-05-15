@@ -18,6 +18,6 @@ public class Main {
         BotJob botJob = new BotJob(emailTo, variation);
 
         ScheduledThreadPoolExecutor scheduler = new ScheduledThreadPoolExecutor(1);
-        scheduler.scheduleAtFixedRate(botJob, 0, period, TimeUnit.MINUTES);
+        scheduler.scheduleAtFixedRate(botJob, 0, period, TimeUnit.HOURS);
     }
 }
