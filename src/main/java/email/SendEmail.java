@@ -8,8 +8,8 @@ public class SendEmail {
 
     private Email emailConfig;
 
-    public void sendBitcoinPrice(String bitcoinPrice) {
-        emailConfig = new Email("", "", "");
+    public void sendBitcoinPrice(double bitcoinPrice, String emailTo) {
+        emailConfig = new Email("", "", emailTo);
 
         Session session = Session.getDefaultInstance(emailConfig.getProperties(), new Authenticator() {
             protected PasswordAuthentication getPasswordAuthentication() {

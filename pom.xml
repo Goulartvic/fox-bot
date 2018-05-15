@@ -16,11 +16,11 @@
             <version>1.11.2</version>
         </dependency>
 
-        <!-- PhantomJs -->
+        <!-- Selenium -->
         <dependency>
-            <groupId>com.codeborne</groupId>
-            <artifactId>phantomjsdriver</artifactId>
-            <version>1.4.4</version>
+            <groupId>org.seleniumhq.selenium</groupId>
+            <artifactId>selenium-chrome-driver</artifactId>
+            <version>3.12.0</version>
         </dependency>
 
         <!-- JavaMail -->

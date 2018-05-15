@@ -1,6 +1,6 @@
 package bot;
 
-import configs.PhantomConfig;
+import configs.ChromeConfig;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.openqa.selenium.WebDriver;
@@ -9,16 +9,16 @@ import org.openqa.selenium.WebDriver;
 
 public class Bot {
 
-    private PhantomConfig phantomConfig = new PhantomConfig();
+    private ChromeConfig chromeConfig = new ChromeConfig();
 
     public String getBitcoinPrice() {
 
-        phantomConfig.initialize();
-        WebDriver phantomDriver = phantomConfig.getPhantomDriver();
-        phantomDriver.get("https://foxbit.com.br/");
+        chromeConfig.initialize();
+        WebDriver chromeDriver = chromeConfig.getChromeDriver();
+        chromeDriver.get("https://foxbit.com.br/");
 
-        String html = phantomDriver.getPageSource();
-        phantomDriver.close();
+        String html = chromeDriver.getPageSource();
+        chromeDriver.close();
 
         Document document = Jsoup.parse(html);
         String bitcoinPrice = document.body()
