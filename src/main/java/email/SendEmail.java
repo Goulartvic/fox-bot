@@ -16,8 +16,6 @@ public class SendEmail {
                 return new PasswordAuthentication(emailConfig.getEmailSend(), emailConfig.getEmailPassword());
             }
         });
-        session.setDebug(true);
-
         try {
 
             Message message = new MimeMessage(session);
